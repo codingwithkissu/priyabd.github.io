@@ -14,7 +14,7 @@ const scoreDiv = document.getElementById("scoreContainer");
 // create our questions
 let questions = [
   {
-    question: "What is favourite fast food ?",
+    question: "Which is your favourite fast food ?",
     imgSrc: "img/html.png",
     choiceA: "Momos",
     choiceB: "Maggie",
@@ -30,7 +30,7 @@ let questions = [
     correct: "C",
   },
   {
-    question: "People should call you with which name ?",
+    question: "People should call you by which name ?",
     imgSrc: "img/js.png",
     choiceA: "Jyoti",
     choiceB: "Priya",
@@ -41,7 +41,7 @@ let questions = [
     question: "Which is your favourite Color",
     imgSrc: "img/js.png",
     choiceA: "Red",
-    choiceB: "Blue",
+    choiceB: "Pink",
     choiceC: "Black",
     correct: "C",
   },
