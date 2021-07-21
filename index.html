@@ -4,126 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="jessie.css" />
-    <title>Jessie Priya</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
   </head>
   <body>
     <div class="container">
-      <div class="cover"><img src="./images/cover jessie bd'.jpg" /></div>
-      <div class="content" style="position: relative">
-        <div class="heart" style="position: absolute; padding-left: 40%">
-          <img
-            src="./images/—Pngtree—torn paper heart_5330765.png"
-            alt=""
-            width="100%"
-          />
-        </div>
-
-        <div class="container2">
-          <h2 style="margin-left: 5%">Birthday Queen</h2>
-          <p style="margin-left: 5%">
-            Happy Birthday To My Tantalizingly Super BFF.
-          </p>
-
-          <div class="slideshow-container">
-            <div
-              class="mySlides fade"
-              style="margin-left: 10%; position: relative"
-            >
-              <div class="numbertext">1 / 5</div>
-              <img
-                src="./images/portrait five.jpg"
-                style="width: 145%; border-radius: 25px"
-              />
-              <audio
-                controls
-                autoplay
-                style="position: absolute; bottom: 20px; opacity: 0.05"
-              >
-                <source src="./audio/bd end.mp3" type="audio/mpeg" />
-              </audio>
-              <div class="text" style="text-align: center">Happy Birthday</div>
-            </div>
-
-            <div class="mySlides fade" style="margin-left: 10%">
-              <div class="numbertext">2 / 5</div>
-              <img
-                src="./images/portrait three.jpg"
-                style="width: 145%; border-radius: 25px"
-              />
-
-              <div class="text">Happy Birthday</div>
-            </div>
-
-            <div class="mySlides fade" style="margin-left: 10%">
-              <div class="numbertext">3 / 5</div>
-              <img
-                src="./images/portrait one.jpg"
-                style="width: 145%; border-radius: 25px"
-              />
-
-              <div class="text">Happy Birthday</div>
-            </div>
-            <div class="mySlides fade" style="margin-left: 10%">
-              <div class="numbertext">4 / 5</div>
-              <img
-                src="./images/portrait four.jpg"
-                style="width: 145%; border-radius: 25px"
-              />
-
-              <div class="text">Happy Birthday</div>
-            </div>
-            <div class="mySlides fade" style="margin-left: 10%">
-              <div class="numbertext">5 / 5</div>
-              <img
-                src="./images/portrait two.jpg"
-                style="width: 145%; border-radius: 25px"
-              />
-
-              <div class="text">Happy Birthday</div>
-            </div>
-          </div>
-
-          <br />
-
-          <div style="text-align: center">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </div>
-        </div>
-        <div class="priyawishes">
-          <img src="./images/LOVE BD.png" alt="" />
-        </div>
+      <audio
+        controls
+        autoplay
+        style="position: absolute; bottom: 20px; opacity: 1"
+      >
+        <source src="../audio/priya bd.mp3" type="audio/mpeg" />
+      </audio>
+      <div class="divone">
+        <p>Happy Bithday Priya 🎇</p>
       </div>
-      <div class="college">
-        <img src="./images/Bd colleg.jpg" alt="Birthday" />
+      <div class="divtwo">
+        <a href="./just/Questions.html">Answer The Quetions for Surprise</a>
       </div>
     </div>
-    <script>
-      var slideIndex = 0;
-      showSlides();
 
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides, 10000); // Change image every 2 seconds
-      }
+    <script src="confetti.js"></script>
+    <!-- Confetti  JS-->
+    <script>
+      // start
+
+      const start = () => {
+        setTimeout(function () {
+          confetti.start();
+        }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+      };
+
+      //  Stop
+
+      const stop = () => {
+        setTimeout(function () {
+          confetti.stop();
+        }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+      };
+
+      start();
+      stop();
     </script>
   </body>
 </html>
