@@ -178,7 +178,7 @@ function scoreRender() {
     if (scorePerCent === 100) {
       const aagra = document.createElement("a");
       aagra.id = "new-item";
-      aagra.innerHTML = '<a href="./main.html">Click Me For SurPrise</a>';
+      aagra.innerHTML = '<a href="./index.html">Click Me For SurPrise</a>';
       scoreDiv.appendChild(aagra);
     } else {
       const aagra = document.createElement("a");
